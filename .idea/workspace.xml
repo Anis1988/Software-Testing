@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="95f7adc4-4493-4400-9d7f-e47c3196da1b" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$USER_HOME$/.m2/wrapper/dists/apache-maven-3.6.3-bin/1iopthnavndlasol9gbrbg6bf2/apache-maven-3.6.3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="1gnm560bPlvsX8rEWY6qsVvdZog" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="false" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showVisibilityIcons" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="softwaretest.test.util" />
+      <recent name="softwaretest.test.utils" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java/softwaretest/test/payment" />
+      <recent name="$PROJECT_DIR$/src/test/java/softwaretest/test/customer" />
+      <recent name="$PROJECT_DIR$/src/main/java/softwaretest/test/payment/stripe" />
+      <recent name="$PROJECT_DIR$/src/main/java/softwaretest/test/payment" />
+      <recent name="$PROJECT_DIR$/src/main/java/softwaretest/test/customer" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JUnit.CustomerRepositoryTest">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerRegistrationServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="softwaretest.test.customer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="softwaretest.test.customer" />
+      <option name="MAIN_CLASS_NAME" value="softwaretest.test.customer.CustomerRegistrationServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerRegistrationServiceTest.itShouldNotSaveNewCustomerWhenPhoneNumberisInvalid" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="softwaretest.test.customer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="softwaretest.test.customer" />
+      <option name="MAIN_CLASS_NAME" value="softwaretest.test.customer.CustomerRegistrationServiceTest" />
+      <option name="METHOD_NAME" value="itShouldNotSaveNewCustomerWhenPhoneNumberisInvalid" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerRegistrationServiceTest.itShouldThrowWhenPhoneNumberIsTaken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="softwaretest.test.customer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="softwaretest.test.customer" />
+      <option name="MAIN_CLASS_NAME" value="softwaretest.test.customer.CustomerRegistrationServiceTest" />
+      <option name="METHOD_NAME" value="itShouldThrowWhenPhoneNumberIsTaken" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="softwaretest.test.customer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="softwaretest.test.customer" />
+      <option name="MAIN_CLASS_NAME" value="softwaretest.test.customer.CustomerRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CustomerRepositoryTest.itShouldSaveCustomer" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="softwaretest.test.customer.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="softwaretest.test.customer" />
+      <option name="MAIN_CLASS_NAME" value="softwaretest.test.customer.CustomerRepositoryTest" />
+      <option name="METHOD_NAME" value="itShouldSaveCustomer" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="test" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="softwaretest.test.TestApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.CustomerRepositoryTest" />
+        <item itemvalue="JUnit.CustomerRegistrationServiceTest" />
+        <item itemvalue="JUnit.CustomerRegistrationServiceTest.itShouldNotSaveNewCustomerWhenPhoneNumberisInvalid" />
+        <item itemvalue="JUnit.CustomerRegistrationServiceTest.itShouldThrowWhenPhoneNumberIsTaken" />
+        <item itemvalue="JUnit.CustomerRepositoryTest.itShouldSaveCustomer" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="95f7adc4-4493-4400-9d7f-e47c3196da1b" name="Default Changelist" comment="" />
+      <created>1598758544110</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1598758544110</updated>
+      <workItem from="1598758545477" duration="2139000" />
+      <workItem from="1598808560007" duration="334000" />
+      <workItem from="1598808951629" duration="7949000" />
+      <workItem from="1602454735939" duration="2930000" />
+      <workItem from="1602460225110" duration="64000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="533" y="234" key="#File_and_Code_Templates" timestamp="1602458546760">
+      <screen x="0" y="23" width="1792" height="1041" />
+    </state>
+    <state x="533" y="234" key="#File_and_Code_Templates/0.23.1792.1041@0.23.1792.1041" timestamp="1602458546760" />
+    <state x="384" y="125" key="#Project_Structure" timestamp="1602460287986">
+      <screen x="0" y="23" width="1792" height="1041" />
+    </state>
+    <state x="384" y="125" key="#Project_Structure/0.23.1792.1041@0.23.1792.1041" timestamp="1602460287986" />
+    <state x="709" y="266" key="#com.intellij.ide.util.MemberChooser" timestamp="1602459188823">
+      <screen x="0" y="23" width="1792" height="1041" />
+    </state>
+    <state x="709" y="266" key="#com.intellij.ide.util.MemberChooser/0.23.1792.1041@0.23.1792.1041" timestamp="1602459188823" />
+    <state width="1750" height="273" key="GridCell.Tab.0.bottom" timestamp="1602455278725">
+      <screen x="0" y="23" width="1792" height="1041" />
+    </state>
+    <state width="1750" height="273" key="GridCell.Tab.0.bottom/0.23.1792.1041@0.23.1792.1041" timestamp="1602455278725" />
+    <state width="1750" height="273" key="GridCell.Tab.0.center" timestamp="1602455278725">
+      <screen x="0" y="23" width="1792" height="1041" />
+    </state>
+    <state width="1750" height="273" key="GridCell.Tab.0.center/0.23.1792.1041@0.23.1792.1041" timestamp="1602455278725" />
+    <state width="1750" height="273" key="GridCell.Tab.0.left" timestamp="1602455278724">
+      <screen x="0" y="23" width="1792" height="1041" />
+    </state>
+    <state width="1750" height="273" key="GridCell.Tab.0.left/0.23.1792.1041@0.23.1792.1041" timestamp="1602455278724" />
+    <state width="1750" height="273" key="GridCell.Tab.0.right" timestamp="1602455278725">
+      <screen x="0" y="23" width="1792" height="1041" />
+    </state>
+    <state width="1750" height="273" key="GridCell.Tab.0.right/0.23.1792.1041@0.23.1792.1041" timestamp="1602455278725" />
+    <state width="1750" height="273" key="GridCell.Tab.1.bottom" timestamp="1598812303423">
+      <screen x="0" y="23" width="1792" height="1041" />
+    </state>
+    <state width="1750" height="273" key="GridCell.Tab.1.bottom/0.23.1792.1041@0.23.1792.1041" timestamp="1598812303423" />
+    <state width="1750" height="273" key="GridCell.Tab.1.center" timestamp="1598812303422">
+      <screen x="0" y="23" width="1792" height="1041" />
+    </state>
+    <state width="1750" height="273" key="GridCell.Tab.1.center/0.23.1792.1041@0.23.1792.1041" timestamp="1598812303422" />
+    <state width="1750" height="273" key="GridCell.Tab.1.left" timestamp="1598812303422">
+      <screen x="0" y="23" width="1792" height="1041" />
+    </state>
+    <state width="1750" height="273" key="GridCell.Tab.1.left/0.23.1792.1041@0.23.1792.1041" timestamp="1598812303422" />
+    <state width="1750" height="273" key="GridCell.Tab.1.right" timestamp="1598812303423">
+      <screen x="0" y="23" width="1792" height="1041" />
+    </state>
+    <state width="1750" height="273" key="GridCell.Tab.1.right/0.23.1792.1041@0.23.1792.1041" timestamp="1598812303423" />
+    <state width="1750" height="351" key="GridCell.Tab.2.bottom" timestamp="1598810297834">
+      <screen x="0" y="23" width="1792" height="1041" />
+    </state>
+    <state width="1750" height="351" key="GridCell.Tab.2.bottom/0.23.1792.1041@0.23.1792.1041" timestamp="1598810297834" />
+    <state width="1750" height="351" key="GridCell.Tab.2.center" timestamp="1598810297833">
+      <screen x="0" y="23" width="1792" height="1041" />
+    </state>
+    <state width="1750" height="351" key="GridCell.Tab.2.center/0.23.1792.1041@0.23.1792.1041" timestamp="1598810297833" />
+    <state width="1750" height="351" key="GridCell.Tab.2.left" timestamp="1598810297833">
+      <screen x="0" y="23" width="1792" height="1041" />
+    </state>
+    <state width="1750" height="351" key="GridCell.Tab.2.left/0.23.1792.1041@0.23.1792.1041" timestamp="1598810297833" />
+    <state width="1750" height="351" key="GridCell.Tab.2.right" timestamp="1598810297833">
+      <screen x="0" y="23" width="1792" height="1041" />
+    </state>
+    <state width="1750" height="351" key="GridCell.Tab.2.right/0.23.1792.1041@0.23.1792.1041" timestamp="1598810297833" />
+    <state x="607" y="197" key="Maven.ArtifactSearchDialog" timestamp="1598759046255">
+      <screen x="0" y="23" width="1792" height="1041" />
+    </state>
+    <state x="607" y="197" key="Maven.ArtifactSearchDialog/0.23.1792.1041@0.23.1792.1041" timestamp="1598759046255" />
+    <state x="511" y="250" key="NewModule_or_Project.wizard" timestamp="1598759118064">
+      <screen x="0" y="23" width="1792" height="1041" />
+    </state>
+    <state x="511" y="250" key="NewModule_or_Project.wizard/0.23.1792.1041@0.23.1792.1041" timestamp="1598759118064" />
+    <state x="397" y="182" key="SettingsEditor" timestamp="1602459260296">
+      <screen x="0" y="23" width="1792" height="1041" />
+    </state>
+    <state x="397" y="182" key="SettingsEditor/0.23.1792.1041@0.23.1792.1041" timestamp="1602459260296" />
+    <state x="241" y="463" key="refactoring.ChangeSignatureDialog" timestamp="1598759490677">
+      <screen x="0" y="23" width="1792" height="1041" />
+    </state>
+    <state x="241" y="463" key="refactoring.ChangeSignatureDialog/0.23.1792.1041@0.23.1792.1041" timestamp="1598759490677" />
+    <state x="561" y="254" key="search.everywhere.popup" timestamp="1602459108980">
+      <screen x="0" y="23" width="1792" height="1041" />
+    </state>
+    <state x="561" y="254" key="search.everywhere.popup/0.23.1792.1041@0.23.1792.1041" timestamp="1602459108980" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/softwaretest/test/payment/PaymentService.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/test$CustomerRegistrationServiceTest.ic" NAME="CustomerRegistrationServiceTest Coverage Results" MODIFIED="1598831535261" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>softwaretest.test.customer.*</FILTER>
+    </SUITE>
+  </component>
+</project>
