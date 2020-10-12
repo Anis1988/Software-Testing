@@ -24,12 +24,13 @@ class CustomerRegistrationServiceTest {
     private PhoneNumberValidator phoneNumberValidator;
 
     @Mock
-    private CustomerRepository customerRepository;
+    private CustomerRepository customerRepository;  //= mock(CustomerRepository.class);
 
     @Captor
     private ArgumentCaptor<Customer> customerArgumentCaptor;
 
     private CustomerRegistrationService underTest;
+
 
     @BeforeEach
     void setUp() {
@@ -98,7 +99,7 @@ class CustomerRegistrationServiceTest {
         // ... a request
         CustomerRegistrationRequest request = new CustomerRegistrationRequest(customer);
 
-        // ... an existing customer is retuned
+        // ... an existing customer is returned
         given(customerRepository.selectCustomerByPhoneNumber(phoneNumber))
                 .willReturn(Optional.of(customer));
 

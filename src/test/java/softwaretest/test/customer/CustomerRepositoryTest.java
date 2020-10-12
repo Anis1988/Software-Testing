@@ -1,6 +1,5 @@
 package softwaretest.test.customer;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -31,7 +30,7 @@ class CustomerRepositoryTest {
 
         // Then
         Optional<Customer> optionalCustomer = underTest.selectCustomerByPhoneNumber(phoneNumber);
-        Assertions.assertThat(optionalCustomer)
+        assertThat(optionalCustomer)
                 .isPresent()
                 .hasValueSatisfying(c -> {
                     assertThat(c).isEqualToComparingFieldByField(customer);
@@ -47,7 +46,7 @@ class CustomerRepositoryTest {
         Optional<Customer> optionalCustomer = underTest.selectCustomerByPhoneNumber(phoneNumber);
 
         // Then
-        Assertions.assertThat(optionalCustomer).isNotPresent();
+        assertThat(optionalCustomer).isNotPresent();
     }
 
 
@@ -63,7 +62,7 @@ class CustomerRepositoryTest {
         // Then
         Optional<Customer> optionalCustomer = underTest.findById(id);
 
-        Assertions.assertThat(optionalCustomer)
+        assertThat(optionalCustomer)
                 .isPresent()
                 .hasValueSatisfying(c -> {
 //                    assertThat(c.getId()).isEqualTo(id);
@@ -82,7 +81,7 @@ class CustomerRepositoryTest {
         // When
         // Then
         assertThatThrownBy(() -> underTest.save(customer))
-                .hasMessageContaining("not-null property references a null or transient value : com.example.testing.customer.Customer.name")
+                .hasMessageContaining("not-null property references a null or transient value : softwaretest.test.customer.Customer.name")
                 .isInstanceOf(DataIntegrityViolationException.class);
 
     }
@@ -96,7 +95,7 @@ class CustomerRepositoryTest {
         // When
         // Then
         assertThatThrownBy(() -> underTest.save(customer))
-                .hasMessageContaining("not-null property references a null or transient value : com.example.testing.customer.Customer.phoneNumber")
+                .hasMessageContaining("not-null property references a null or transient value : softwaretest.test.customer.Customer.phoneNumber")
                 .isInstanceOf(DataIntegrityViolationException.class);
 
     }
