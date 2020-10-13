@@ -16,6 +16,7 @@ public class CustomerRegistrationService {
 
     public void registerNewCustomer(CustomerRegistrationRequest request) {
         String phoneNumber = request.getCustomer().getPhoneNumber();
+
         if (!phoneNumberValidator.test(phoneNumber)) {
             throw new IllegalStateException("Phone Number " + phoneNumber + " is not Valid");
         }

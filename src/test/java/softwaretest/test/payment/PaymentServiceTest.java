@@ -22,8 +22,10 @@ class PaymentServiceTest {
 
     @Mock
     private CustomerRepository customerRepository;
+
     @Mock
     private PaymentRepository paymentRepository;
+
     @Mock
     private CardCharger cardCharger;
 

@@ -1,8 +1,6 @@
 package softwaretest.test.payment;
 
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -14,11 +12,9 @@ import softwaretest.test.customer.Customer;
 import softwaretest.test.customer.CustomerRegistrationRequest;
 
 import java.math.BigDecimal;
-import java.util.Objects;
 import java.util.UUID;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.fail;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.post;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.put;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
@@ -33,6 +29,9 @@ class PaymentIntegrationTest {
     @Autowired
     private MockMvc mockMvc;
 
+    @Autowired
+    private ObjectMapper objectMapper;
+
     @Test
     void itShouldCreatePaymentSuccessfully() throws Exception {
         // Given a customer
@@ -45,7 +44,7 @@ class PaymentIntegrationTest {
         // Register
         ResultActions customerRegResultActions = mockMvc.perform(put("/api/v1/customer-registration")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(Objects.requireNonNull(objectToJson(customerRegistrationRequest))));
+                .content(objectMapper.writeValueAsBytes(customerRegistrationRequest)));
 
         // ... Payment
         long paymentId = 1L;
@@ -65,7 +64,7 @@ class PaymentIntegrationTest {
         // ... When payment is sent
         ResultActions paymentResultActions = mockMvc.perform(post("/api/v1/payment")
                 .contentType(MediaType.APPLICATION_JSON)
-                .content(Objects.requireNonNull(objectToJson(paymentRequest))));
+                .content(objectMapper.writeValueAsBytes(paymentRequest)));
 
         // Then both customer registration and payment requests are 200 status code
         customerRegResultActions.andExpect(status().isOk());
@@ -73,19 +72,11 @@ class PaymentIntegrationTest {
 
         // Payment is stored in db
         // TODO: Do not use paymentRepository instead create an endpoint to retrieve payments for customers
-        Assertions.assertThat(paymentRepository.findById(paymentId))
+        assertThat(paymentRepository.findById(paymentId))
                 .isPresent()
                 .hasValueSatisfying(p -> assertThat(p).isEqualToComparingFieldByField(payment));
 
         // TODO: Ensure sms is delivered
     }
 
-    private String objectToJson(Object object) {
-        try {
-            return new ObjectMapper().writeValueAsString(object);
-        } catch (JsonProcessingException e) {
-            fail("Failed to convert object to json");
-            return null;
-        }
-    }
 }
