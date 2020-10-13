@@ -1,8 +1,12 @@
 package softwaretest.test.payment;
 
-import lombok.Data;
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
+import lombok.ToString;
 
-@Data
+@RequiredArgsConstructor
+@Getter
+@ToString
 public class CardPaymentCharge {
 
     private final boolean isCardDebited;

@@ -1,7 +1,5 @@
 package softwaretest.test.payment;
 
-import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import softwaretest.test.customer.CustomerRepository;
 
@@ -9,14 +7,22 @@ import java.util.List;
 import java.util.UUID;
 
 @Service
-@RequiredArgsConstructor
 public class PaymentService {
 
     private static final List<Currency> ACCEPTED_CURRENCIES = List.of(Currency.USD, Currency.GBP);
 
     private final CustomerRepository customerRepository;
     private final PaymentRepository paymentRepository;
-    private final CardPaymentCharger cardPaymentCharger;
+    private final CardCharger cardCharger;
+
+
+    public PaymentService(CustomerRepository customerRepository,
+                          PaymentRepository paymentRepository,
+                           CardCharger cardCharger) {
+        this.customerRepository = customerRepository;
+        this.paymentRepository = paymentRepository;
+        this.cardCharger = cardCharger;
+    }
 
 
     void chargeCard(UUID customerId, PaymentRequest paymentRequest) {
@@ -37,7 +43,7 @@ public class PaymentService {
         }
 
         // 3. Charge card
-        CardPaymentCharge cardPaymentCharge = cardPaymentCharger.chargeCard(
+        CardPaymentCharge cardPaymentCharge = cardCharger.chargeCard(
                 paymentRequest.getPayment().getSource(),
                 paymentRequest.getPayment().getAmount(),
                 paymentRequest.getPayment().getCurrency(),

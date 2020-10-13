@@ -25,21 +25,20 @@ class PaymentServiceTest {
     @Mock
     private PaymentRepository paymentRepository;
     @Mock
-    private CardPaymentCharger cardPaymentCharger;
+    private CardCharger cardCharger;
 
     private PaymentService underTest;
 
     @BeforeEach
     void setUp() {
         MockitoAnnotations.initMocks(this);
-        underTest = new PaymentService(customerRepository, paymentRepository, cardPaymentCharger);
+        underTest = new PaymentService(customerRepository, paymentRepository, cardCharger);
     }
 
     @Test
     void itShouldChargeCardSuccessfully() {
         // Given
         UUID customerId = UUID.randomUUID();
-
         // ... Customer exists
         given(customerRepository.findById(customerId)).willReturn(Optional.of(mock(Customer.class)));
 
@@ -56,7 +55,7 @@ class PaymentServiceTest {
         );
 
         // ... Card is charged successfully
-        given(cardPaymentCharger.chargeCard(
+        given(cardCharger.chargeCard(
                 paymentRequest.getPayment().getSource(),
                 paymentRequest.getPayment().getAmount(),
                 paymentRequest.getPayment().getCurrency(),
@@ -100,7 +99,7 @@ class PaymentServiceTest {
         );
 
         // ... Card is not charged successfully
-        given(cardPaymentCharger.chargeCard(
+        given(cardCharger.chargeCard(
                 paymentRequest.getPayment().getSource(),
                 paymentRequest.getPayment().getAmount(),
                 paymentRequest.getPayment().getCurrency(),
@@ -148,7 +147,7 @@ class PaymentServiceTest {
         // Then
 
         // ... No interaction with cardPaymentCharger
-        then(cardPaymentCharger).shouldHaveNoInteractions();
+        then(cardCharger).shouldHaveNoInteractions();
 
         // ... No interaction with paymentRepository
         then(paymentRepository).shouldHaveNoInteractions();
@@ -169,7 +168,7 @@ class PaymentServiceTest {
                 .hasMessageContaining("Customer with id [" + customerId + "] not found");
 
         // ... No interactions with PaymentCharger not PaymentRepository
-        then(cardPaymentCharger).shouldHaveNoInteractions();
+        then(cardCharger).shouldHaveNoInteractions();
         then(paymentRepository).shouldHaveNoInteractions();
     }
 }

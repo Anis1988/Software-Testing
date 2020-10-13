@@ -3,11 +3,11 @@ package softwaretest.test.payment.stripe;
 import com.stripe.exception.StripeException;
 import com.stripe.model.Charge;
 import com.stripe.net.RequestOptions;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Service;
+import softwaretest.test.payment.CardCharger;
 import softwaretest.test.payment.CardPaymentCharge;
-import softwaretest.test.payment.CardPaymentCharger;
 import softwaretest.test.payment.Currency;
 
 import java.math.BigDecimal;
@@ -15,22 +15,15 @@ import java.util.HashMap;
 import java.util.Map;
 
 @Service
-@ConditionalOnProperty(
-        value = "stripe.enabled",
-        havingValue = "true"
-)
-public class StripeService implements CardPaymentCharger {
+@ConditionalOnProperty(value = "stripe.enabled", havingValue = "true")
+@RequiredArgsConstructor
+public class StripeService implements CardCharger {
 
     private final StripeApi stripeApi;
 
     private final static RequestOptions requestOptions = RequestOptions.builder()
             .setApiKey("sk_test_4eC39HqLyjWDarjtT1zdp7dc")
             .build();
-
-    @Autowired
-    public StripeService(StripeApi stripeApi) {
-        this.stripeApi = stripeApi;
-    }
 
     @Override
     public CardPaymentCharge chargeCard(String cardSource,

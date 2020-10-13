@@ -1,6 +1,5 @@
 package softwaretest.test.payment;
 
-import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.orm.jpa.DataJpaTest;
@@ -11,11 +10,7 @@ import java.util.UUID;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@DataJpaTest(
-        properties = {
-                "spring.jpa.properties.javax.persistence.validation.mode=none"
-        }
-)
+@DataJpaTest(properties = {"spring.jpa.properties.javax.persistence.validation.mode=none"})
 class PaymentRepositoryTest {
 
     @Autowired
@@ -37,7 +32,7 @@ class PaymentRepositoryTest {
 
         // Then
         Optional<Payment> paymentOptional = underTest.findById(paymentId);
-        Assertions.assertThat(paymentOptional)
+        assertThat(paymentOptional)
                 .isPresent()
                 .hasValueSatisfying(p -> assertThat(p).isEqualTo(payment));
     }

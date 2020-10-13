@@ -1,12 +1,12 @@
 package softwaretest.test.payment;
 
 
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Component;
 
 import java.math.BigDecimal;
 
-@Service
-public interface CardPaymentCharger {
+@Component
+public interface CardCharger {
 
     CardPaymentCharge chargeCard(String cardSource, BigDecimal amount, Currency currency, String description);
 }

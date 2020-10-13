@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="GROUP_BY_SEVERITY" value="true" />
+  </component>
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
@@ -22,15 +25,36 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95f7adc4-4493-4400-9d7f-e47c3196da1b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/test.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/test.iml" afterDir="false" />
+    <list default="true" id="95f7adc4-4493-4400-9d7f-e47c3196da1b" name="Default Changelist" comment="added ignore file">
+      <change afterPath="$PROJECT_DIR$/src/main/java/softwaretest/test/payment/CardCharger.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/softwaretest/test/customer/CustomerRegistrationServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/softwaretest/test/customer/CustomerRegistrationServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softwaretest/test/payment/CardPaymentCharge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softwaretest/test/payment/CardPaymentCharge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softwaretest/test/payment/CardPaymentCharger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softwaretest/test/payment/Payment.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softwaretest/test/payment/Payment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softwaretest/test/payment/PaymentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softwaretest/test/payment/PaymentRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softwaretest/test/payment/PaymentRequest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softwaretest/test/payment/PaymentRequest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softwaretest/test/payment/PaymentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softwaretest/test/payment/PaymentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softwaretest/test/payment/stripe/MockStripeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softwaretest/test/payment/stripe/MockStripeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softwaretest/test/payment/stripe/StripeApi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softwaretest/test/payment/stripe/StripeApi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/softwaretest/test/payment/stripe/StripeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/softwaretest/test/payment/stripe/StripeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/softwaretest/test/customer/CustomerRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/softwaretest/test/customer/CustomerRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/softwaretest/test/customer/CustomerRegistrationServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/softwaretest/test/customer/CustomerRegistrationServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/softwaretest/test/payment/PaymentRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/softwaretest/test/payment/PaymentRepositoryTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/softwaretest/test/payment/PaymentServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/softwaretest/test/payment/PaymentServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/softwaretest/test/payment/stripe/StripeServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/softwaretest/test/payment/stripe/StripeServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softwaretest/test/payment/CardPaymentCharge.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/softwaretest/test/payment/CardPaymentCharge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softwaretest/test/payment/CardPaymentCharger.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softwaretest/test/payment/Payment.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/softwaretest/test/payment/Payment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softwaretest/test/payment/PaymentRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/softwaretest/test/payment/PaymentRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softwaretest/test/payment/PaymentRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/softwaretest/test/payment/PaymentRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softwaretest/test/payment/PaymentService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/softwaretest/test/payment/PaymentService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softwaretest/test/payment/stripe/MockStripeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softwaretest/test/payment/stripe/StripeApi.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/softwaretest/test/payment/stripe/StripeApi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/softwaretest/test/payment/stripe/StripeService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/softwaretest/test/payment/stripe/StripeService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/softwaretest/test/customer/CustomerRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/softwaretest/test/customer/CustomerRepositoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/softwaretest/test/payment/PaymentRepositoryTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/softwaretest/test/payment/PaymentRepositoryTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/softwaretest/test/payment/PaymentServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/softwaretest/test/payment/PaymentServiceTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/softwaretest/test/payment/stripe/StripeServiceTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/softwaretest/test/payment/stripe/StripeServiceTest.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,6 +82,7 @@
     <option name="showVisibilityIcons" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="h2" />
     <property name="RequestMappingsPanelOrder0" value="0" />
     <property name="RequestMappingsPanelOrder1" value="1" />
     <property name="RequestMappingsPanelWidth0" value="75" />
@@ -71,7 +96,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -86,30 +111,13 @@
       <recent name="$PROJECT_DIR$/src/main/java/softwaretest/test/customer" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CustomerRegistrationServiceTest.itShouldSaveNewCustomerWhenIdIsNull">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+  <component name="RunManager" selected="Spring Boot.TestApplication">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CustomerRegistrationServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="softwaretest.test.customer.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="softwaretest.test.customer" />
-      <option name="MAIN_CLASS_NAME" value="softwaretest.test.customer.CustomerRegistrationServiceTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -131,48 +139,62 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerRegistrationServiceTest.itShouldSaveNewCustomerWhenIdIsNull" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="PaymentRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="softwaretest.test.customer.*" />
+          <option name="PATTERN" value="softwaretest.test.payment.CardPaymentCharge" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="softwaretest.test.customer" />
-      <option name="MAIN_CLASS_NAME" value="softwaretest.test.customer.CustomerRegistrationServiceTest" />
-      <option name="METHOD_NAME" value="itShouldSaveNewCustomerWhenIdIsNull" />
+      <option name="PACKAGE_NAME" value="softwaretest.test.payment" />
+      <option name="MAIN_CLASS_NAME" value="softwaretest.test.payment.PaymentRepositoryTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StripeServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="softwaretest.test.payment.stripe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="softwaretest.test.payment.stripe" />
+      <option name="MAIN_CLASS_NAME" value="softwaretest.test.payment.stripe.StripeServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StripeServiceTest.itShouldThrownEx" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="softwaretest.test.payment.stripe.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="softwaretest.test.payment.stripe" />
+      <option name="MAIN_CLASS_NAME" value="softwaretest.test.payment.stripe.StripeServiceTest" />
+      <option name="METHOD_NAME" value="itShouldThrownEx" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CustomerRegistrationServiceTest.itShouldThrowWhenPhoneNumberIsTaken" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestingApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="test" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="softwaretest.test.customer.*" />
+          <option name="PATTERN" value="softwaretest.test.util.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="softwaretest.test.customer" />
-      <option name="MAIN_CLASS_NAME" value="softwaretest.test.customer.CustomerRegistrationServiceTest" />
-      <option name="METHOD_NAME" value="itShouldThrowWhenPhoneNumberIsTaken" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="softwaretest.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="softwaretest.test" />
-      <option name="MAIN_CLASS_NAME" value="softwaretest.test.TestApplicationTests" />
+      <option name="PACKAGE_NAME" value="softwaretest.test.util" />
+      <option name="MAIN_CLASS_NAME" value="softwaretest.test.util.TestingApplicationTests" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -187,11 +209,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CustomerRegistrationServiceTest.itShouldSaveNewCustomerWhenIdIsNull" />
+        <item itemvalue="JUnit.StripeServiceTest" />
+        <item itemvalue="JUnit.StripeServiceTest.itShouldThrownEx" />
+        <item itemvalue="JUnit.TestingApplicationTests" />
+        <item itemvalue="JUnit.PaymentRepositoryTest" />
         <item itemvalue="JUnit.CustomerRegistrationServiceTest.itShouldNotSaveCustomerWhenCustomerExists" />
-        <item itemvalue="JUnit.CustomerRegistrationServiceTest.itShouldThrowWhenPhoneNumberIsTaken" />
-        <item itemvalue="JUnit.TestApplicationTests" />
-        <item itemvalue="JUnit.CustomerRegistrationServiceTest" />
       </list>
     </recent_temporary>
   </component>
@@ -208,8 +230,17 @@
       <workItem from="1598808951629" duration="7949000" />
       <workItem from="1602454735939" duration="2930000" />
       <workItem from="1602460225110" duration="5307000" />
-      <workItem from="1602467345718" duration="1011000" />
+      <workItem from="1602467345718" duration="9956000" />
+      <workItem from="1602539528459" duration="5552000" />
     </task>
+    <task id="LOCAL-00001" summary="added ignore file">
+      <created>1602470947461</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1602470947461</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -225,6 +256,11 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="added ignore file" />
+    <option name="LAST_COMMIT_MESSAGE" value="added ignore file" />
   </component>
   <component name="WindowStateProjectService">
     <state x="533" y="234" key="#File_and_Code_Templates" timestamp="1602458546760">
@@ -235,51 +271,59 @@
       <screen x="0" y="23" width="1792" height="1041" />
     </state>
     <state x="384" y="125" key="#Project_Structure/0.23.1792.1041@0.23.1792.1041" timestamp="1602460402908" />
-    <state x="709" y="266" key="#com.intellij.ide.util.MemberChooser" timestamp="1602467512480">
+    <state x="496" y="209" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1602527683400">
+      <screen x="0" y="23" width="1792" height="1042" />
+    </state>
+    <state x="496" y="209" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.23.1792.1042@0.23.1792.1042" timestamp="1602527683400" />
+    <state x="709" y="266" key="#com.intellij.ide.util.MemberChooser" timestamp="1602547572442">
       <screen x="0" y="23" width="1792" height="1042" />
     </state>
     <state x="709" y="266" key="#com.intellij.ide.util.MemberChooser/0.23.1792.1041@0.23.1792.1041" timestamp="1602459188823" />
-    <state x="709" y="266" key="#com.intellij.ide.util.MemberChooser/0.23.1792.1042@0.23.1792.1042" timestamp="1602467512480" />
-    <state width="1750" height="273" key="GridCell.Tab.0.bottom" timestamp="1602467760594">
+    <state x="709" y="266" key="#com.intellij.ide.util.MemberChooser/0.23.1792.1042@0.23.1792.1042" timestamp="1602547572442" />
+    <state x="420" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602543087659">
+      <screen x="0" y="23" width="1792" height="1042" />
+    </state>
+    <state x="420" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1792.1042@0.23.1792.1042" timestamp="1602543087659" />
+    <state width="1750" height="273" key="GridCell.Tab.0.bottom" timestamp="1602553129415">
       <screen x="0" y="23" width="1792" height="1042" />
     </state>
     <state width="1750" height="273" key="GridCell.Tab.0.bottom/0.23.1792.1041@0.23.1792.1041" timestamp="1602455278725" />
-    <state width="1750" height="273" key="GridCell.Tab.0.bottom/0.23.1792.1042@0.23.1792.1042" timestamp="1602467760594" />
-    <state width="1750" height="273" key="GridCell.Tab.0.center" timestamp="1602467760593">
+    <state width="1750" height="273" key="GridCell.Tab.0.bottom/0.23.1792.1042@0.23.1792.1042" timestamp="1602553129415" />
+    <state width="1750" height="273" key="GridCell.Tab.0.center" timestamp="1602553129414">
       <screen x="0" y="23" width="1792" height="1042" />
     </state>
     <state width="1750" height="273" key="GridCell.Tab.0.center/0.23.1792.1041@0.23.1792.1041" timestamp="1602455278725" />
-    <state width="1750" height="273" key="GridCell.Tab.0.center/0.23.1792.1042@0.23.1792.1042" timestamp="1602467760593" />
-    <state width="1750" height="273" key="GridCell.Tab.0.left" timestamp="1602467760593">
+    <state width="1750" height="273" key="GridCell.Tab.0.center/0.23.1792.1042@0.23.1792.1042" timestamp="1602553129414" />
+    <state width="1750" height="273" key="GridCell.Tab.0.left" timestamp="1602553129413">
       <screen x="0" y="23" width="1792" height="1042" />
     </state>
     <state width="1750" height="273" key="GridCell.Tab.0.left/0.23.1792.1041@0.23.1792.1041" timestamp="1602455278724" />
-    <state width="1750" height="273" key="GridCell.Tab.0.left/0.23.1792.1042@0.23.1792.1042" timestamp="1602467760593" />
-    <state width="1750" height="273" key="GridCell.Tab.0.right" timestamp="1602467760594">
+    <state width="1750" height="273" key="GridCell.Tab.0.left/0.23.1792.1042@0.23.1792.1042" timestamp="1602553129413" />
+    <state width="1750" height="273" key="GridCell.Tab.0.right" timestamp="1602553129414">
       <screen x="0" y="23" width="1792" height="1042" />
     </state>
     <state width="1750" height="273" key="GridCell.Tab.0.right/0.23.1792.1041@0.23.1792.1041" timestamp="1602455278725" />
-    <state width="1750" height="273" key="GridCell.Tab.0.right/0.23.1792.1042@0.23.1792.1042" timestamp="1602467760594" />
-    <state width="1750" height="273" key="GridCell.Tab.1.bottom" timestamp="1602467760595">
+    <state width="1750" height="273" key="GridCell.Tab.0.right/0.23.1792.1042@0.23.1792.1042" timestamp="1602553129414" />
+    <state width="1750" height="273" key="GridCell.Tab.1.bottom" timestamp="1602553129416">
       <screen x="0" y="23" width="1792" height="1042" />
     </state>
     <state width="1750" height="273" key="GridCell.Tab.1.bottom/0.23.1792.1041@0.23.1792.1041" timestamp="1598812303423" />
-    <state width="1750" height="273" key="GridCell.Tab.1.bottom/0.23.1792.1042@0.23.1792.1042" timestamp="1602467760595" />
-    <state width="1750" height="273" key="GridCell.Tab.1.center" timestamp="1602467760594">
+    <state width="1750" height="273" key="GridCell.Tab.1.bottom/0.23.1792.1042@0.23.1792.1042" timestamp="1602553129416" />
+    <state width="1750" height="273" key="GridCell.Tab.1.center" timestamp="1602553129415">
       <screen x="0" y="23" width="1792" height="1042" />
     </state>
     <state width="1750" height="273" key="GridCell.Tab.1.center/0.23.1792.1041@0.23.1792.1041" timestamp="1598812303422" />
-    <state width="1750" height="273" key="GridCell.Tab.1.center/0.23.1792.1042@0.23.1792.1042" timestamp="1602467760594" />
-    <state width="1750" height="273" key="GridCell.Tab.1.left" timestamp="1602467760594">
+    <state width="1750" height="273" key="GridCell.Tab.1.center/0.23.1792.1042@0.23.1792.1042" timestamp="1602553129415" />
+    <state width="1750" height="273" key="GridCell.Tab.1.left" timestamp="1602553129415">
       <screen x="0" y="23" width="1792" height="1042" />
     </state>
     <state width="1750" height="273" key="GridCell.Tab.1.left/0.23.1792.1041@0.23.1792.1041" timestamp="1598812303422" />
-    <state width="1750" height="273" key="GridCell.Tab.1.left/0.23.1792.1042@0.23.1792.1042" timestamp="1602467760594" />
-    <state width="1750" height="273" key="GridCell.Tab.1.right" timestamp="1602467760595">
+    <state width="1750" height="273" key="GridCell.Tab.1.left/0.23.1792.1042@0.23.1792.1042" timestamp="1602553129415" />
+    <state width="1750" height="273" key="GridCell.Tab.1.right" timestamp="1602553129415">
       <screen x="0" y="23" width="1792" height="1042" />
     </state>
     <state width="1750" height="273" key="GridCell.Tab.1.right/0.23.1792.1041@0.23.1792.1041" timestamp="1598812303423" />
-    <state width="1750" height="273" key="GridCell.Tab.1.right/0.23.1792.1042@0.23.1792.1042" timestamp="1602467760595" />
+    <state width="1750" height="273" key="GridCell.Tab.1.right/0.23.1792.1042@0.23.1792.1042" timestamp="1602553129415" />
     <state width="1750" height="351" key="GridCell.Tab.2.bottom" timestamp="1598810297834">
       <screen x="0" y="23" width="1792" height="1041" />
     </state>
@@ -304,19 +348,33 @@
       <screen x="0" y="23" width="1792" height="1041" />
     </state>
     <state x="511" y="250" key="NewModule_or_Project.wizard/0.23.1792.1041@0.23.1792.1041" timestamp="1598759118064" />
-    <state x="397" y="182" key="SettingsEditor" timestamp="1602459260296">
-      <screen x="0" y="23" width="1792" height="1041" />
+    <state x="699" y="469" key="ReplaceDuplicatesPrompt" timestamp="1602547713718">
+      <screen x="0" y="23" width="1792" height="1042" />
+    </state>
+    <state x="699" y="469" key="ReplaceDuplicatesPrompt/0.23.1792.1042@0.23.1792.1042" timestamp="1602547713718" />
+    <state x="397" y="182" key="SettingsEditor" timestamp="1602539567640">
+      <screen x="0" y="23" width="1792" height="1042" />
     </state>
     <state x="397" y="182" key="SettingsEditor/0.23.1792.1041@0.23.1792.1041" timestamp="1602459260296" />
-    <state x="241" y="463" key="refactoring.ChangeSignatureDialog" timestamp="1598759490677">
-      <screen x="0" y="23" width="1792" height="1041" />
+    <state x="397" y="182" key="SettingsEditor/0.23.1792.1042@0.23.1792.1042" timestamp="1602539567640" />
+    <state x="496" y="284" key="Vcs.Push.Dialog.v2" timestamp="1602470950419">
+      <screen x="0" y="23" width="1792" height="1042" />
+    </state>
+    <state x="496" y="284" key="Vcs.Push.Dialog.v2/0.23.1792.1042@0.23.1792.1042" timestamp="1602470950419" />
+    <state x="694" y="465" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1602470919123">
+      <screen x="0" y="23" width="1792" height="1042" />
+    </state>
+    <state x="694" y="465" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1792.1042@0.23.1792.1042" timestamp="1602470919123" />
+    <state x="241" y="463" key="refactoring.ChangeSignatureDialog" timestamp="1602531432554">
+      <screen x="0" y="23" width="1792" height="1042" />
     </state>
     <state x="241" y="463" key="refactoring.ChangeSignatureDialog/0.23.1792.1041@0.23.1792.1041" timestamp="1598759490677" />
-    <state x="561" y="254" key="search.everywhere.popup" timestamp="1602467508142">
+    <state x="241" y="463" key="refactoring.ChangeSignatureDialog/0.23.1792.1042@0.23.1792.1042" timestamp="1602531432554" />
+    <state x="561" y="254" width="670" height="676" key="search.everywhere.popup" timestamp="1602547566678">
       <screen x="0" y="23" width="1792" height="1042" />
     </state>
     <state x="561" y="254" key="search.everywhere.popup/0.23.1792.1041@0.23.1792.1041" timestamp="1602459108980" />
-    <state x="561" y="254" key="search.everywhere.popup/0.23.1792.1042@0.23.1792.1042" timestamp="1602467508142" />
+    <state x="561" y="254" width="670" height="676" key="search.everywhere.popup/0.23.1792.1042@0.23.1792.1042" timestamp="1602547566678" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/test$CustomerRegistrationServiceTest.ic" NAME="CustomerRegistrationServiceTest Coverage Results" MODIFIED="1602465394893" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

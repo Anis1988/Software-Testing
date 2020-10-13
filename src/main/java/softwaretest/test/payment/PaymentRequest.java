@@ -1,9 +1,11 @@
 package softwaretest.test.payment;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
-import lombok.Data;
+import lombok.Getter;
+import lombok.ToString;
 
-@Data
+@Getter
+@ToString
 public class PaymentRequest {
 
     private final Payment payment;

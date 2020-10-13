@@ -11,6 +11,8 @@ import java.util.UUID;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
+
+// the  reason we added the properties is because the POJO @Column(nullable = false) in not triggered
 @DataJpaTest(properties = {"spring.jpa.properties.javax.persistence.validation.mode=none"})
 class CustomerRepositoryTest {
 
@@ -30,6 +32,7 @@ class CustomerRepositoryTest {
 
         // Then
         Optional<Customer> optionalCustomer = underTest.selectCustomerByPhoneNumber(phoneNumber);
+
         assertThat(optionalCustomer)
                 .isPresent()
                 .hasValueSatisfying(c -> {
